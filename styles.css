@@ -74,6 +74,8 @@ a{
     user-select: none;
     font-size: 7em;
     color: rgb(231, 231, 231);
+    position: absolute;
+    padding-bottom: 0px;;
 
     bottom: -16%;
     left: -5%;
@@ -140,7 +142,139 @@ a{
     color: black;
 }
 
+.hero-section-right-part{
+    position: relative;
+}
+.abs{
+    position: absolute;
+}
 
-.hero-section-right-part .user-img{
-    height: 100px;
+.user-img{
+    padding: 2.5rem;
+    filter: grayscale(1);
+    height: 450px;
+    transition: all 1s;
+    animation: scaleImage 5s linear infinite;
+    
+
+}
+.img{
+    height: 100%;
+    z-index: -1;
+}
+.icons{
+    z-index: 1;
+}
+@keyframes scaleImage {
+    0%{
+        filter: grayscale(0);
+        transform: scale(1);
+        
+    }
+    50%{
+        transform: scale(1.1);
+        filter: grayscale(1); 
+        box-shadow: 3px 3px 10px black; 
+    }
+    100%{
+        transform: scale(1);
+        filter:grayscale(0);
+       
+    }
+    
+}
+.icon-dots{
+    bottom: -1rem;
+    right: 0;
+    animation: dots 3s linear infinite;
+}
+
+@keyframes dots {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15x);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+.icon-cube{
+    top: -2em;
+    right: 0;
+    animation: cube 3s linear infinite;
+}
+
+@keyframes cube {
+    0%{
+        transform:rotateY(0deg) translateY(0px);
+
+    }
+    50%{
+        transform: rotateY(180deg) translateY(-12px);
+    }
+    100%{
+        transform: rotateY(360deg) translateY(0px);
+    }
+    
+}
+.icon-circle{
+    bottom: 0;
+    left: 0;
+    animation: circle 3s linear infinite;
+}
+
+@keyframes circle {
+    0%{
+        transform: translateY(0px) translateX(0px);
+    }
+    50%{
+        transform: translateY(15px) translateX(15px);
+    }
+    100%{
+        transform: translateY(0px) translateX(0px);
+    }
+    
+}
+.icon-zigzag{
+    top: -1rem;
+    left: 0;
+    animation: zigzag 3s linear infinite;
+}
+
+@keyframes zigzag {
+    0%{
+        transform: translateY(0px) translateX(0px);
+    }
+    50%{
+        transform: translateY(-15px) translateX(-15px);
+    }
+    100%{
+        transform: translateY(0px) translateX(0px);
+    }
+    
+    
+}
+.icon-plus{
+    top: -0.8rem;
+    left: 50%;
+    animation: plus 3s ease infinite;
+}
+
+@keyframes plus {
+    0%{
+        top: 0%;
+        left: 50%;
+    }
+    50%{
+       top: 3%;
+       left: 45%;
+    }
+    100%{
+        top: 0%;
+        left: 50%;
+    }
+    
 }
