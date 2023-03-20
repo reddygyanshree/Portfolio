@@ -278,3 +278,149 @@ a{
     }
     
 }
+
+.project-section{
+    background-color:rgb(231, 231, 231);
+    margin-top: 6rem;
+}
+.project-header{
+    color: var(--bgOrange);
+    font-size: 90px;
+    padding: 30px;
+    text-align: center;
+}
+.project-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:3rem 0 ;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+.card{
+    width: 90%;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative ;
+    box-shadow: 0px 0px 40px #1f1f1f;
+    
+}
+#p1{
+    background-image: url(images/projects/Project1.png);
+}
+#p2{
+    background-image: url(images/projects/Project2.png);
+    margin-left: 120px;
+}
+#p3{
+    background-image: url(images/projects/Project3.png);
+}
+#p4{
+    background-image: url(images/projects/Project4.png);
+    margin-left: 120px;
+}
+.card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #1f1f1f9a;
+    transform: scaleX(1);
+    z-index: 0;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background:linear-gradient(45deg,#343d68,#343d68be,#343d687c);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s;
+    z-index: 1;
+}
+
+.card:hover::before{
+    transform: scaleX(1);
+}
+.project-number{
+    position: absolute;
+    font-size: 200px;
+    color: white;
+    font-weight: 600;
+    z-index: 2;
+    opacity: 0;
+}
+.card:hover .project-number{
+    opacity: 1;
+}
+.project-num-right{
+    right: -40px;
+    top: -45px;
+}
+.project-num-left{
+    left: -40px;
+    top: -45px;
+}
+.project-content{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    color: white;
+    padding: 2em;
+    bottom: 20%;
+    z-index: 2;
+    gap: 1em;
+    transition: all 0.4s;
+}
+.content-left{
+    left: 10%;
+}
+.content-right{
+    right: 10%;
+}
+.project-skills-container{
+   width: 60%;
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+   flex-wrap: wrap;
+}
+.project-skill{
+    width: 40px;
+}
+.project-heading{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem;
+}
+.project-sub-heading{
+    width: 70%;
+    font-size: 16px;
+    font-style: italic;
+}
+.btns{
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+}
+.btn-project:hover{
+    border: none;
+}
+.icon{
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+    transition: all 0.4s;
+}
+.icon:hover{
+    color: var(--bgOrange);
+}
+.card:hover .project-content{
+    transform: scale(1.1);
+}
