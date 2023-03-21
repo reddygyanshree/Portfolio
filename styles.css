@@ -75,7 +75,6 @@ a{
     font-size: 7em;
     color: rgb(231, 231, 231);
     position: absolute;
-    padding-bottom: 0px;;
 
     bottom: -16%;
     left: -5%;
@@ -480,4 +479,85 @@ a{
     }
 
 
+}
+
+.skills-section{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 10rem  auto;
+    position: relative;
+    justify-content: center;
+    padding: 5rem;
+}
+.skills-left{
+   display: flex; 
+   width: 50%;
+   flex-direction: column;
+}
+.skills-heading{
+    color:var(--bgOrange);
+    font-size: 50px;
+    font-style: bold;
+    line-height: 50px;
+    
+}
+.skills-heading .capital{  
+    font-size: 90px;
+}
+.skills-description{
+    margin-top: 1rem;
+    width: 85%;
+    text-align: justify;
+}
+.skills-right{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    gap: 2rem;
+    position: relative;
+    justify-content: center;
+}
+.skill-icon{
+    width: 90px;
+    z-index: 1;
+    transition: all 0.5s;
+}
+.skill-icon:hover{
+    transform: scale(1.2);
+}
+.blob{
+    z-index: -2;
+    animation: blob-style 3s linear infinite ;
+    transform: scale(0.7);
+}
+
+@keyframes blob-style {
+
+    0%{
+        left: 20%;
+        top: 10%;
+    }
+    50%{
+        left: 30%;
+        top: 0%;
+    }
+    100%{
+        left: 20%;
+        top: 10%;
+    }
+
+    
+}
+.faded-skill{
+    user-select: none;
+    font-size: 10em;
+    font-style: bold;
+    color: rgb(231, 231, 231);
+    position: absolute;
+
+    bottom: -35.4%;
+    right: -10%;
+    font-weight: bold;
+    transition: all 3s;
 }
