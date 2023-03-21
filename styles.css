@@ -424,3 +424,60 @@ a{
 .card:hover .project-content{
     transform: scale(1.1);
 }
+
+
+
+
+@media screen and (max-width:1300px){
+    .project-header{
+        padding-top: 30px;
+        color: var(--bgOrange);
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .project-container{
+        padding: 5px;
+        margin: 10px;
+        gap: 60px;
+
+    }
+    .card{
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+    }
+    .project-content{
+        scale: 0.5;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    .content-left{
+        left: 0;
+    }
+
+    .project-heading{
+        font-size: 40px;
+        width: 100%;
+    }
+    .project-sub-heading{
+        width: 100%;
+    }
+    #p2,#p4{
+        margin-left: 0;
+    }
+    .project-skill{
+        width: 35px;
+    }
+    .card:hover .project-number{
+        opacity: 0;
+    }
+    .card:hover .project-content{
+        scale: 0.55;
+    }
+
+
+}
